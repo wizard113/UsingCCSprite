@@ -29,6 +29,10 @@
 		CCSprite *sprite = [CCSprite spriteWithFile:@"birds.png"];
 		[sprite setPosition:ccp(240, 160)];
 		[self addChild:sprite];
+		
+		CCSprite *sprite1 = [CCSprite spriteWithFile:@"icon.png"];
+		[sprite1 setPosition:ccp(240, 200)];
+		[self addChild:sprite1];
 	}
 	return self;
 }
