@@ -21,7 +21,7 @@
 -(id) init
 {
 	if( (self=[super init])) {
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
+		CCLabelTTF *label = [CCLabelTTF labelWithString:@"World" fontName:@"Marker Felt" fontSize:64];
 		CGSize size = [[CCDirector sharedDirector] winSize];
 		label.position =  ccp( size.width /2 , size.height/2 );
 		[self addChild: label];
@@ -29,9 +29,12 @@
 		CCSprite *sprite = [CCSprite spriteWithFile:@"icon.png"];
 		[sprite setPosition:ccp(240, 160)];
 		[self addChild:sprite];
+		
+		CCSprite *sprite1 = [CCSprite spriteWithFile:@"icon.png"];
+		[sprite1 setPosition:ccp(240, 200)];
+		[self addChild:sprite1];
 	}
 	return self;
-	//test
 }
 
 
