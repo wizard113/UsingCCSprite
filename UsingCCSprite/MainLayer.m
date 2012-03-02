@@ -31,6 +31,7 @@
 		[self addChild:sprite];
 	}
 	return self;
+	//test
 }
 
 
