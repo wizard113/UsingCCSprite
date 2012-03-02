@@ -25,6 +25,10 @@
 		CGSize size = [[CCDirector sharedDirector] winSize];
 		label.position =  ccp( size.width /2 , size.height/2 );
 		[self addChild: label];
+		
+		CCSprite *sprite = [CCSprite spriteWithFile:@"birds.png"];
+		[sprite setPosition:ccp(240, 160)];
+		[self addChild:sprite];
 	}
 	return self;
 }
